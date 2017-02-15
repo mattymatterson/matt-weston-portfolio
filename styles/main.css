@@ -1,0 +1,147 @@
+/*
+* Outermost should be only thing that uses VW/VH
+* Everything else should go off percentage of the outside.
+*/
+.container {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    max-height: 1600px;
+}
+.project {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #D0D0D0;
+    width: 90%;
+    height: 95%;
+    border-radius:10px;
+}
+.status {
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    width: 85%;
+    height: 30px;
+    background-color: #909090;
+}
+.online {
+    /* Container for chat button */
+    z-index: 9999;
+    position: fixed;
+    bottom: 0vh;
+    right: 9vw;
+    width: 20%;
+    height: 30px;
+    background-color: #606060 ;
+    max-width: 150px;
+}
+.onlineList {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    bottom: 40px;
+    right: 9vw;
+    background-color: #fff;
+    width: 20%;
+    max-width: 150px;
+    height: auto;
+    min-height: 150px;
+    border:4px solid #E0E0E0;
+    border-radius: 2px;
+}
+.onlineListTop {
+    text-align: center;
+    font-size: 16pt;
+    color: #A8A8A8;
+    border-bottom: 5px solid #A8A8A8;
+}
+.users ul, ul {
+    padding: 0;
+    margin: 15px;
+    list-style: none;
+    font-size: 10pt;
+}
+.users img {
+    width: 10px;
+    height: 10px;
+    transform: translateY(-20%);
+}
+@media screen and (max-width: 600px) {
+    .project {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 5px;
+        background-color: #D0D0D0;
+        width: 90%;
+        height: 95%;
+        border-radius:10px;
+    }
+    .status {
+        margin-left: 5px;
+        margin-right: 5px;
+        z-index: 9999;
+        position: fixed;
+        bottom: 0;
+        left: 15px;
+        width: 82%;
+        height: 30px;
+        background-color: #909090;
+    }
+    .online {
+        /* Container for chat button */
+        z-index: 9999;
+        position: fixed;
+        bottom: 0vh;
+        right: 12vw;
+        width: 20%;
+        height: 30px;
+        background-color: #606060 ;
+        max-width: 150px;
+        min-width: 100px;
+    }
+    .onlineList {
+        display: none;
+        position: fixed;
+        z-index: 9;
+        bottom: 40px;
+        right: 9vw;
+        background-color: #fff;
+        width: 50%;
+        max-width: 200px;
+        min-width: 100px;
+        height: auto;
+        min-height: 150px;
+        border:4px solid #E0E0E0;
+        border-radius: 2px;
+    }
+}
+
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 139px;
+}
+
+.navbar-fixed-left + .container {
+    padding-left: 160px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
