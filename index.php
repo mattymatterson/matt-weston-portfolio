@@ -48,9 +48,11 @@ $username = "Matt Weston";
             });
         });
         $(document).keypress(function(e) {
-            if(e.which == 13) {
-                alert('You pressed enter!');
-            }
+            if ($("#chatType").is(":focus")) {
+                if(e.which == 13) {
+                    alert('You pressed enter!');
+                }
+            }  
         });
     </script>
 </head>
