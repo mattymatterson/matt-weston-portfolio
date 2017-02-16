@@ -47,6 +47,11 @@ $username = "Matt Weston";
                 $("#profileMenu").toggle();
             });
         });
+        $(document).keypress(function(e) {
+            if(e.which == 13) {
+                alert('You pressed enter!');
+            }
+        });
     </script>
 </head>
 <body>
