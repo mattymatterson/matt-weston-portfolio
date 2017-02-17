@@ -12,6 +12,7 @@ $query = "select * from users";
 
 $result = $db->query($query);
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+    /*
     echo "<tr>";
     echo "<td>" . $row["user_id"] . "</td>";
     echo "<td>" . htmlspecialchars($row["username"]) . "</td>";
@@ -20,6 +21,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     echo "<td>" . htmlspecialchars($row["lastname"]) . "</td>";
     echo "<td>" . htmlspecialchars($row["email"]) . "</td>";
     echo "</tr>";
+    */
 }
 ?>
 
