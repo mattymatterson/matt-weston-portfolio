@@ -1,4 +1,4 @@
 <?php
 //header("location: login.html");
-header("location: 
+header("location: mainpage.php");
 ?>
