@@ -1,0 +1,43 @@
+CREATE SEQUENCE user_id_seq;
+CREATE TABLE users (
+    user_id integer NOT NULL DEFAULT nextval('user_id_seq'),
+	username varchar(255) NOT NULL,
+	password varchar(255) NOT NULL,
+	firstname varchar(255) NOT NULL,
+	lastname varchar(255) NOT NULL,
+	email varchar(255) NOT NULL
+);
+ALTER SEQUENCE user_id_seq OWNED BY users.user_id;
+
+
+insert into users(
+	user_id,
+	username,
+	password,
+	firstname,
+	lastname,
+	email)
+values (
+	nextval('user_id_seq'),
+	'matt',
+	'matt',
+	'Matt',
+	'Weston',
+	'matt.weston.mw@gmail.com'
+);
+
+insert into users(
+	user_id,
+	username,
+	password,
+	firstname,
+	lastname,
+	email)
+values (
+	nextval('user_id_seq'),
+	'quin',
+	'quin',
+	'Quin',
+	'Carter',
+	'Quin.Carter@gmail.com'
+);
