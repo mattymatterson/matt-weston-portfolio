@@ -1,6 +1,9 @@
 <?php
 $user = "kjuxctiwjuizkv";
 $pass = "f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
+?>
+
+<?php
 # This function reads your DATABASE_URL config var and returns a connection
 # string suitable for pg_connect. Put this in your app.
 function pg_connection_string_from_database_url() {
@@ -9,8 +12,8 @@ function pg_connection_string_from_database_url() {
 }
 # Here we establish the connection. Yes, that's all.
 $pg_conn = pg_connect(pg_connection_string_from_database_url());
-$result = pg_query($pg_conn, "SELECT * FROM users WHERE username='matt';");
-
+# Now let's use the connection for something silly just to prove it works:
+$result = pg_query($pg_conn, "SELECT relname FROM pg_stat_user_tables WHERE schemaname='public'");
 print "<pre>\n";
 if (!pg_num_rows($result)) {
   print("Your connection is working, but your database is empty.\nFret not. This is expected for new apps.\n");
@@ -19,6 +22,7 @@ if (!pg_num_rows($result)) {
   while ($row = pg_fetch_row($result)) { print("- $row[0]\n"); }
 }
 print "\n";
-
+?>
+<?php
 //header("Location:mainpage.php");
 ?>
