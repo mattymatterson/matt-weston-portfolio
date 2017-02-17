@@ -8,7 +8,7 @@ $dsn = "pgsql:"
     . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
 
 $db = new PDO($dsn);
-$query = "selet * from users";
+$query = "select * from users";
 
 $result = $db->query($query);
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
