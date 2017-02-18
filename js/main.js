@@ -8,7 +8,7 @@ $( document ).ready(function() {
                 var Content = $(".container");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "-270px");
-                chatBox.css("left","20px");
+                chatBox.css("left","40px");
                 Content.css("left", "-270px");
                 Content.css("position", "relative");
                 toggled = true;
@@ -28,7 +28,7 @@ $( document ).ready(function() {
                         var Content = $(".container");
                         var chatBox = $("#chatType");
                         leftNav.css("left", "-120px");
-                        chatBox.css("left","20px");
+                        chatBox.css("left","40px");
                         Content.css("left", "30px");
                         Content.css("position", "relative");
                         toggled = true;
