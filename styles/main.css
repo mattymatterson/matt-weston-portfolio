@@ -2,6 +2,9 @@
 * Outermost should be only thing that uses VW/VH
 * Everything else should go off percentage of the outside.
 */
+body {
+    background-color: #aed9df;
+}
 .container {
     background-color: #fff;
     width: 100vw;
@@ -299,11 +302,9 @@ body {
     z-index: 1000;
 }
 #chat-box {
-    background-color: #aed9df;
     height: 83vh;
 }
 #type-bar {
-    background-color: #aed9df;
     height: 60px;
 }
 #chatType {
