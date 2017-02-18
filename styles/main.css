@@ -258,15 +258,6 @@ body {
         position: relative;
         left: 150px;
     }
-    #chatType {
-        position: fixed;
-        left: 170px !important;
-        width: 70vw !important;
-        border-radius: 10px;
-        border: 5px solid #4f5b69;
-        height: 4vh;
-        text-indent: 10px;
-    }
     .nav-side-menu .menu-list .menu-content {
         display: block;
     }
