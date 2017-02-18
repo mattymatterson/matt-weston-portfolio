@@ -26,6 +26,8 @@ if (isset($username) && !empty($username)) {
         }
         if ($_SESSION['username'] === $username) {
             header('Location: /mainpage.php');
+        } else {
+            header('Location: /login.html');
         }
     }
 }
