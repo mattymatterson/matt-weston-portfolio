@@ -311,7 +311,7 @@ body {
     height: 60px;
 }
 #chatType {
-    position: relative;
+    position: fixed;
     /* left: 0vh; */
     width: 70%;
     border-radius: 10px;
