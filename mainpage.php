@@ -19,7 +19,7 @@ $username = "Matt Weston";
 </head>
 <body>
 <div class="nav-side-menu" id="left-nav">
-    <div class="brand" id="Profile"><?php echo $username?><span class="glyphicon glyphicon-menu-down"></span><span id="collapse-left-navbar" class="glyphicon glyphicon-menu-left"></span></div>
+    <div class="brand" id="Profile"><?php echo $_SESSION['username']?><span class="glyphicon glyphicon-menu-down"></span><span id="collapse-left-navbar" class="glyphicon glyphicon-menu-left"></span></div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
     <div id="profileMenu">
         <li><a href="/logout.php">Logout</a></li>
