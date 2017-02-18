@@ -45,10 +45,6 @@ $( document ).ready(function() {
 $(document).keypress(function(e) {
     if ($("#chatType").is(":focus")) {
         if(e.which == 13) {
-            alert('You pressed enter!');
-            $("#chatType").val("");
-        }else if(e.which == 27) {
-            alert('You pressed escape!');
             $("#chatType").val("");
         }
     }
