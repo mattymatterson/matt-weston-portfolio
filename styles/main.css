@@ -315,6 +315,7 @@ body {
     border: 5px solid #4f5b69;
     height: 3em;
     text-indent: 10px;
+    float:left;
 }
 .glyphicon-menu-left {
     float:right;
