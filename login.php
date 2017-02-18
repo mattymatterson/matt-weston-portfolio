@@ -17,10 +17,11 @@ if (isset($username) && !empty($username)) {
         $query = "select * from users where (username='$username' OR email = '$username') and password='$password'";
         $result = $db->query($query);
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-            if (count($row) == 1) {
+            
+        }
+        if (count($row) == 1) {
                 header('Location: /mainpage.php');
             }
-        }
     }
 }
 ?>
