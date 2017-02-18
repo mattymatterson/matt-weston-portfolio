@@ -30,7 +30,7 @@ if (isset($username) && !empty($username)) {
             echo "<td>" . htmlspecialchars($row["email"]) . "</td>";
             echo "</tr>";
         }
-        if ($row.count == 1) {
+        if (count($row) == 1) {
             header('Location: /mainpage.php');
         }
     }
