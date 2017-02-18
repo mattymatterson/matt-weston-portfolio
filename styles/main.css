@@ -313,7 +313,7 @@ body {
 }
 #chatType {
     position: fixed;
-    /* left: 0vh; */
+    left: 320px;
     width: 70%;
     border-radius: 10px;
     border: 5px solid #4f5b69;
