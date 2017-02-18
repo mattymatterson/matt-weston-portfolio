@@ -6,7 +6,9 @@ $( document ).ready(function() {
             if (toggled == false) {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
+                var chatBox = $("#chatType");
                 leftNav.css("left", "-270px");
+                chatBox.css("left","20px");
                 Content.css("left", "-270px");
                 Content.css("position", "relative");
                 toggled = true;
@@ -24,7 +26,9 @@ $( document ).ready(function() {
                     if (toggled == false) {
                         var leftNav = $("#left-nav");
                         var Content = $(".container");
+                        var chatBox = $("#chatType");
                         leftNav.css("left", "-120px");
+                        chatBox.css("left","20px");
                         Content.css("left", "30px");
                         Content.css("position", "relative");
                         toggled = true;
