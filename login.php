@@ -1,28 +1,28 @@
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (isset($_POST['username']) && !empty($_POST['username])) {
-    if (isset($_POST['password'] && !empty($_POST['password)) {
-      $login = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+<?php
+$username = $_POST['login'];
+$password = $_POST['password'];
 
-      $query = "select * from users where ( username='$login' OR email = $login ) and password='$mypassword'";
-      
-      $result = mysqli_query($db,$query);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-      
-      $count = mysqli_num_rows($result);
-      
-      if($count == 1) {
-         session_register("myusername");
-         $_SESSION['username'] = $row['username'];
-         $_SESSION['user_id'] = $row['user_id'];
-         $_SESSION['firstname'] = $row['firstname'];
-         $_SESSION['lastname'] = $row['lastname'];
-         
-         header("location: welcome.php");
-      }else {
-         header("location: login.html");
-      }
+if (isset($login) && !empty($login)) {
+    if (isset($password) && !empty($password)) {
+        //query database to make sure that login and password match something
+        $dsn = "pgsql:"
+            . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
+            . "dbname=dc2ibd1t6ecgng;"
+            . "user=kjuxctiwjuizkv;"
+            . "port=5432;"
+            . "sslmode=require;"
+            . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
+
+        $db = new PDO($dsn);
+        $query = 'select * from users where (username="$login" OR email = "$login") and password="$password"';
+
+        $result = $db->query($query);
+        while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+            if ($row.count == 1) {
+                header('Location: /mainpage.php');
+            }
+        }
     }
-  }
 }
+
+?>
