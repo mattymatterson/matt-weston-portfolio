@@ -157,6 +157,7 @@ body {
     width: 300px;
     height: 100%;
     color: #e1ffff;
+    z-index: 10000;
 }
 .nav-side-menu .brand {
     background-color: #23282e;
