@@ -24,7 +24,7 @@ if (isset($username) && !empty($username)) {
             $_SESSION['email'] = $row['email'];
             echo count($row);
         }
-        if (count($row) >= 1) {
+        if (count($row['username']) > 0) {
             header('Location: /mainpage.php');
         }
     }
