@@ -241,7 +241,7 @@ body {
     -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
-@media (max-width: 765px) {
+@media (max-width: 767px) {
     .nav-side-menu {
         overflow: auto;
         font-family: verdana;
