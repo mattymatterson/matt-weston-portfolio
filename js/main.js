@@ -2,7 +2,7 @@ $( document ).ready(function() {
     var toggled = false;
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     $( "#collapse-left-navbar" ).click(function() {
-        if (w > 677) {
+        if (w > 600) {
             if (toggled == false){
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
