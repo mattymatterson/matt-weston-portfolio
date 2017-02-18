@@ -1,8 +1,10 @@
 <?php
 $username = $_POST['login'];
 $password = $_POST['password'];
+            echo $username;
+            echo $password;
 
-if (isset($login) && !empty($login)) {
+if (isset($username) && !empty($username)) {
     if (isset($password) && !empty($password)) {
         //query database to make sure that login and password match something
         $dsn = "pgsql:"
@@ -18,6 +20,8 @@ if (isset($login) && !empty($login)) {
 
         $result = $db->query($query);
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+            echo $query;
+            echo $row;
             if ($row.count == 1) {
                 header('Location: /mainpage.php');
             }
