@@ -23,6 +23,16 @@ if (isset($username) && !empty($username)) {
                     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                         echo $query;
                         echo $row;
+                                while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                                        echo "<tr>";
+                                        echo "<td>" . $row["username"] . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["username"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["password"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["firstname"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["lastname"]) . "</td>";
+                                        echo "<td>" . htmlspecialchars($row["email"]) . "</td>";
+                                        echo "</tr>";
+                                    }
                         if ($row.count == 1) {
                             header('Location: /mainpage.php');
                         }
