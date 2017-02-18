@@ -6,7 +6,7 @@ $password = $_POST['password'];
 
 if (isset($username) && !empty($username)) {
     if (isset($password) && !empty($password)) {
-                echo "noticed username and password are set and not empty.
+                echo "noticed username and password are set and not empty.;
         //query database to make sure that login and password match something
         $dsn = "pgsql:"
             . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
