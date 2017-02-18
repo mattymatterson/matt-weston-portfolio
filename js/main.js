@@ -2,7 +2,7 @@ $( document ).ready(function() {
     var toggled = false;
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     $( "#collapse-left-navbar" ).click(function() {
-        if (w >= 766) {
+        if (w >= 766) { // if viewport is larger than 766
             if (toggled == false){
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
@@ -16,7 +16,9 @@ $( document ).ready(function() {
                 leftNav.css("left","0px");
                 Content.css("position","relative");
                 toggled = false;
-            } else { //if viewport is smaller than 677
+            } //end toggle
+            if (w <= 765) {
+                { //if viewport is smaller than 765
                 if (toggled == false){
                     var leftNav = $("#left-nav");
                     var Content = $(".container");
@@ -31,9 +33,9 @@ $( document ).ready(function() {
                     Content.css("position","relative");
                     Content.css("left","0px");
                     toggled = false;
-                }
-         }
-    });
+                } //end toggle
+        } //end if ln 5
+    }); //end nav collapse
     $("#Profile").click(function(){
         $("#profileMenu").toggle();
     });
