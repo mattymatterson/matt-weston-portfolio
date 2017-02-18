@@ -47,8 +47,7 @@ $(document).keypress(function(e) {
         if(e.which == 13) {
             alert('You pressed enter!');
             $("#chatType").val("");
-        }
-        if(e.which == 27) {
+        }else if(e.which == 27) {
             alert('You pressed escape!');
             $("#chatType").val("");
         }
