@@ -18,7 +18,7 @@ if (isset($username) && !empty($username)) {
 
                     $db = new PDO($dsn);
                     $query = 'select * from users where (username="$username" OR email = "$username") and password="$password"';
-
+                        echo "<br>" . $query;
                     $result = $db->query($query);
                     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                         echo $query;
