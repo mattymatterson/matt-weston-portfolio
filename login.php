@@ -17,11 +17,11 @@ if (isset($username) && !empty($username)) {
         $result = $db->query($query);
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
             session_start();
-            $_SESSION['user_id'] = $row['user_id'];
-            $_SESSION['username'] = $row['username'];
-            $_SESSION['firstname'] = $row['firstname'];
-            $_SESSION['lastname'] = $row['lastname'];
-            $_SESSION['email'] = $row['email'];
+            $_SESSION['user_id'] = htmlspecialchars($row["user_id"]);
+            $_SESSION['username'] = htmlspecialchars($row["username"]);
+            $_SESSION['firstname'] = htmlspecialchars($row["firstname"]);
+            $_SESSION['lastname'] = htmlspecialchars($row["lastname"]);
+            $_SESSION['email'] = htmlspecialchars($row["email"]);
             echo count($row);
         }
         if ($_SESSION['username'] === $username) {
