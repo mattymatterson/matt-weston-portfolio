@@ -1,7 +1,6 @@
 <?php
 $username = $_POST['username'];
 $password = $_POST['password'];
-
 if (isset($username) && !empty($username)) {
     if (isset($password) && !empty($password)) {
         //query database to make sure that login and password match something
@@ -17,11 +16,16 @@ if (isset($username) && !empty($username)) {
         $query = "select * from users where (username='$username' OR email = '$username') and password='$password'";
         $result = $db->query($query);
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-            
+            session_start();
+            $_SESSION['user_id'] = $row['user_id'];
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['firstname'] = $row['firstname'];
+            $_SESSION['lastname'] = $row['lastname'];
+            $_SESSION['email'] = $row['email'];
         }
-        if (count($row) == 1) {
-                header('Location: /mainpage.php');
-            }
+    if (count($row) == 1) {
+        header('Location: /mainpage.php');
+        }
     }
 }
 ?>
