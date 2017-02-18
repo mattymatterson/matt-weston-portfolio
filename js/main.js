@@ -13,9 +13,11 @@ $( document ).ready(function() {
             } else {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
+                var ChatBox = $("#chatType")
                 leftNav.css("left","0px");
                 Content.css("position","relative");
                 Content.css("left","0px");
+                ChatBox.css("left,"0px");
                 toggled = false;
             } else { //if viewport is smaller than 677
                 if (toggled == false){
