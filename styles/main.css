@@ -254,6 +254,18 @@ body {
         height: 100%;
         color: #e1ffff;
     }
+    #header-bar {
+        font-family: verdana;
+        height: 100px;
+        width: 100%;
+        font-size: 24pt;
+        color: #e1ffff;
+        border: 3px solid #23282e;
+        background-color: #23282e;
+        position: fixed;
+        top: auto;
+        z-index: 1000;
+    }
     .container {
         position: relative;
         left: 150px;
