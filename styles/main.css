@@ -278,7 +278,7 @@ body {
         float: right;
     }
 }
-@media (min-width: 766px) {
+@media (min-width: 767px) {
     .nav-side-menu .menu-list .menu-content {
         display: block;
     }
