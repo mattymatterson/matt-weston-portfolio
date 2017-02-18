@@ -6,43 +6,31 @@ $( document ).ready(function() {
             if (toggled == false){
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
-                var ChatBox = $("#chatType")
                 leftNav.css("left","-270px");
                 Content.css("left","-270px");
                 Content.css("position","relative");
-                ChatBox.css("left","5vh");
-                ChatBox.css("width","50%");
                 toggled = true;
             } else {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
-                var ChatBox = $("#chatType")
                 leftNav.css("left","0px");
                 Content.css("position","relative");
                 Content.css("left","0px");
-                ChatBox.css("left","35vh");
-                ChatBox.css("width","70%");
                 toggled = false;
             } else { //if viewport is smaller than 677
                 if (toggled == false){
                     var leftNav = $("#left-nav");
                     var Content = $(".container");
-                    var ChatBox = $("#chatType")
                     leftNav.css("left","-120px");
                     Content.css("left","30px");
                     Content.css("position","relative");
-                    ChatBox.css("left","");
-                    ChatBox.css("width","50%");
                     toggled = true;
                 } else {
                     var leftNav = $("#left-nav");
                     var Content = $(".container");
-                    var ChatBox = $("#chatType")
                     leftNav.css("left","0px");
                     Content.css("position","relative");
                     Content.css("left","0px");
-                    ChatBox.css("left","50px");
-                    ChatBox.css("width","70%");
                     toggled = false;
                 }
          }
