@@ -48,5 +48,9 @@ $(document).keypress(function(e) {
             alert('You pressed enter!');
             $("#chatType").val("");
         }
+        if(e.which == 27) {
+            alert('You pressed escape!');
+            $("#chatType").val("");
+        }
     }
 });
