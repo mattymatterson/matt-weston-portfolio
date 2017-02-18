@@ -13,7 +13,9 @@ $( document ).ready(function() {
             } else {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
+                var chatBox = $("#chatType");
                 leftNav.css("left", "0px");
+                chatBox.css("left","320px");
                 Content.css("position", "relative");
                 toggled = false;
             }
@@ -29,7 +31,9 @@ $( document ).ready(function() {
                     } else {
                         var leftNav = $("#left-nav");
                         var Content = $(".container");
+                        var chatBox = $("#chatType");
                         leftNav.css("left", "0px");
+                        chatBox.css("left","160px");
                         Content.css("position", "relative");
                         Content.css("left", "0px");
                         toggled = false;
