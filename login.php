@@ -22,10 +22,12 @@ if (isset($username) && !empty($username)) {
             $_SESSION['firstname'] = $row['firstname'];
             $_SESSION['lastname'] = $row['lastname'];
             $_SESSION['email'] = $row['email'];
+            count($row)
         }
+        /*
     if (count($row) == 1) {
         header('Location: /mainpage.php');
-        }
+        }*/
     }
 }
 ?>
