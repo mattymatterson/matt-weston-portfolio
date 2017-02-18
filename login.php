@@ -1,8 +1,8 @@
 <?php
-$username = $_POST['login'];
+$username = $_POST['username'];
 $password = $_POST['password'];
-            echo $username;
-            echo $password;
+            echo "username: " . $username;
+            echo "password: " . $password;
 
 if (isset($username) && !empty($username)) {
     if (isset($password) && !empty($password)) {
