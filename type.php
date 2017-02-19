@@ -11,9 +11,9 @@ $dsn = "pgsql:"
 $db = new PDO($dsn);
 
 $message = $_POST['data'];
-$time = "The time is now";
-$query = "insert into chat(chat_id,message, chat_from, chat_to, time) values ( nextval('chat_id_seq'), $message, $_SESSION['user_id'], '0', $time);";
-$result = $db->query($query);
+//$time = "The time is now";
+//$query = "insert into chat(chat_id,message, chat_from, chat_to, time) values ( nextval('chat_id_seq'), $message, $_SESSION['user_id'], '0', $time);";
+//$result = $db->query($query);
 /*
 $time = date("h:i:sa");
 $date = date("Y-m-d");
