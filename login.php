@@ -24,11 +24,14 @@ if (isset($username)) {
             $_SESSION['email'] = htmlspecialchars($row["email"]);
             echo count($row);
         }
+        echo $username;
+        echo $password;
+        /*
         if ($_SESSION['username'] == $username) {
             header('Location: /mainpage.php');
         } else {
             header('Location: /login.html');
-        }
+        }*/
     }
 }
 ?>
