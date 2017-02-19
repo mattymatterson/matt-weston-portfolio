@@ -24,7 +24,7 @@ if (isset($username) && !empty($username)) {
             $_SESSION['email'] = htmlspecialchars($row["email"]);
             echo count($row);
         }
-        if ($_SESSION['username'] === $username) {
+        if ($_SESSION['username'] == $username) {
             header('Location: /mainpage.php');
         } else {
             header('Location: /login.html');
