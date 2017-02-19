@@ -49,7 +49,7 @@ if(!isset($_SESSION['username'])) {
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Chats <span class="glyphicon glyphicon-menu-down"></span></a>
             </li>
             <ul class="sub-menu collapse" id="service">
-                <li>All Chat</li>
+                <li><span id="allchat">All Chat</span></li>
             </ul>
 
 
@@ -57,9 +57,9 @@ if(!isset($_SESSION['username'])) {
                 <a href="#"><i class="fa fa-car fa-lg"></i> Private Message <span class="glyphicon glyphicon-menu-down"></span></a>
             </li>
             <ul class="sub-menu collapse" id="new">
-                <li>Matt Weston</li>
-                <li>Quin Carter</li>
-                <li>Logan McCourry</li>
+                <li><span id="mattweston">Matt Weston</span></li>
+                <li><span id="quincarter">Quin Carter</span></li>
+                <li><span id="loganmccourry">Logan McCourry</span></li>
             </ul>
         </ul>
     </div>
@@ -161,6 +161,11 @@ if(!isset($_SESSION['username'])) {
         </div>
     </div>
 </div>
+    <script>
+        $.("#quincarter").click( function(){
+            
+        });
+    </script>
 </body>
 </html>
 <?php
