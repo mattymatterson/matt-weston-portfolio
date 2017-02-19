@@ -57,13 +57,7 @@ $( document ).ready(function() {
 $(document).keypress(function(e) {
     if ($("#chatType").is(":focus")) {
         if(e.which == 13) {
-            $.ajax ({
-                type: "POST",
-                url: '/type.php',
-                data: '{ data: "John", time: "2pm" }',
-                success: function() { alert("Enter Pressed and Ajax working");},
-                failure: function() { alert("Enter Pressed and Ajax not working");}
-            });
+            $.post( "type.php",  { data: "Hello" }  );
             $("#chatType").val("");
         }
     }
