@@ -162,8 +162,14 @@ if(!isset($_SESSION['username'])) {
     </div>
 </div>
     <script>
-        $.("#quincarter").click( function(){
-            
+        $("#mattweston").click(function(){
+            <?php $_SESSION[chat_id] = 1; ?>
+        });
+        $("#quincarter").click(function(){
+            <?php $_SESSION[chat_id] = 2; ?>
+        });
+        $("#loganmccourry").click(function(){
+            <?php $_SESSION[chat_id] = 3; ?>
         });
     </script>
 </body>
