@@ -13,9 +13,7 @@ $db = new PDO($dsn);
 $message = $_POST['data'];
 //$time = "The time is now";
 $query = "insert into chat(chat_id,message, chat_from, chat_to, time) values ( nextval('chat_id_seq'), 'Hello world', 1 , '0', 2:30);";
-$result = pg_query($query);
-
-//$result = $db->query($query);
+$result = $db->query($query);
 /*
 $time = date("h:i:sa");
 $date = date("Y-m-d");
