@@ -1,6 +1,7 @@
 <?php
-session_start();
-$username = "Matt Weston";
+if(!isset($_SESSION['username'])) {
+    header("Location: login.html");
+} else {
 
 ?>
 
@@ -80,3 +81,6 @@ $username = "Matt Weston";
 </div>
 </body>
 </html>
+<?php
+       }
+?>
