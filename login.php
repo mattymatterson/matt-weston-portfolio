@@ -1,8 +1,8 @@
 <?php
 $username = $_POST['username'];
 $password = $_POST['password'];
-if (isset($username) && !empty($username)) {
-    if (isset($password) && !empty($password)) {
+if (isset($username)) {
+    if (isset($password)) {
         //query database to make sure that login and password match something
         $dsn = "pgsql:"
             . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
