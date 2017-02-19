@@ -306,7 +306,7 @@ body {
     z-index: 1000;
 }
 #chat-box {
-    position: fixed;
+    position: relative;
     height: 68vh;
     overflow-y: scroll;
     padding: 30px;
