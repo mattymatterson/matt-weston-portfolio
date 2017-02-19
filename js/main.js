@@ -20,7 +20,7 @@ $( document ).ready(function() {
                 var chatArea = $("#chat-box");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "0px");
-                chatArea.css("left","320px");
+                chatArea.css("left","270px");
                 chatBox.css("left","320px");
                 Content.css("position", "relative");
                 toggled = false;
