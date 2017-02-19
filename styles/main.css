@@ -306,7 +306,11 @@ body {
     z-index: 1000;
 }
 #chat-box {
-    height: 83vh;
+    height: 68vh;
+    overflow-y: scroll;
+    padding: 30px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 #type-bar {
     height: 60px;
