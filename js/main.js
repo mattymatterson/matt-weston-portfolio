@@ -60,7 +60,7 @@ $(document).keypress(function(e) {
             $.ajax ({
                 type: "POST",
                 url: '/type.php',
-                data: {$("chatType").val},
+                data: '{"data":$("chatType").val}',
                 success: function() { alert("Enter Pressed and Ajax working");},
                 failure: function() { alert("Enter Pressed and Ajax not working");}
             });
