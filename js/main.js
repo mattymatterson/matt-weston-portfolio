@@ -59,8 +59,7 @@ $(document).keypress(function(e) {
         if(e.which == 13) {
             $.ajax ({
                 type: "GET",
-                dataType: 'json',
-                url: '/save_json.php',
+                url: '/type.php',
                 success: function() { alert("Enter Pressed and Ajax working");},
                 failure: function() { alert("Enter Pressed and Ajax not working");}
             });
