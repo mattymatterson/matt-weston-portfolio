@@ -1,4 +1,5 @@
 <?php
+header('Location: mainpage.php');
 $dsn = "pgsql:"
     . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
     . "dbname=dc2ibd1t6ecgng;"
