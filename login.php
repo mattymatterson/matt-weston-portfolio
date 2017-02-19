@@ -17,7 +17,6 @@ if (isset($username)) {
         $query = "select * from users where (username='$username' OR email = '$username') and password='$password'";
         $result = $db->query($query);
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-            session_start();
             $_SESSION['user_id'] = htmlspecialchars($row["user_id"]);
             $_SESSION['username'] = htmlspecialchars($row["username"]);
             $_SESSION['firstname'] = htmlspecialchars($row["firstname"]);
