@@ -9,7 +9,6 @@ CREATE TABLE users (
 );
 ALTER SEQUENCE user_id_seq OWNED BY users.user_id;
 
-
 insert into users(
 	user_id,
 	username,
@@ -40,4 +39,33 @@ values (
 	'Quin',
 	'Carter',
 	'Quin.Carter@gmail.com'
+);
+
+
+
+
+
+CREATE SEQUENCE chat_id_seq;
+CREATE TABLE chat (
+    	chat_id integer NOT NULL DEFAULT nextval('chat_id_seq'),
+	message text NOT NULL,
+	chat_from varchar(255) NOT NULL,
+	chat_to varchar(255) NOT NULL,
+	time varchar(255) NOT NULL
+);
+ALTER SEQUENCE chat_id_seq OWNED BY chat.chat_id;
+
+insert into chat(
+	chat_id,
+	message,
+	chat_from,
+	chat_to,
+	time
+	)
+values (
+	nextval('chat_id_seq'),
+	'This is a long message',
+	'1',
+	'0',
+	'(select LOCALTIMESTAMP())'
 );
