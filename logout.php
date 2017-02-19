@@ -1,7 +1,11 @@
 <?php
+session_start();
 
-session start();
+$_SESSION['username'] = null;
+$_SESSION['active'] = null;
+$_SESSION['start'] = null;
+$_SESSION['expire'] = null;
 session_destroy();
-header('Location: login.html');
+header("Location: login.html");
 
 ?>
