@@ -6,8 +6,10 @@ $( document ).ready(function() {
             if (toggled == false) {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
+                var chatArea = $("#chat-box");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "-270px");
+                chatArea.css("left","40px");
                 chatBox.css("left","40px");
                 Content.css("left", "-270px");
                 Content.css("position", "relative");
@@ -15,8 +17,10 @@ $( document ).ready(function() {
             } else {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
+                var chatArea = $("#chat-box");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "0px");
+                chatArea.css("left","320px");
                 chatBox.css("left","320px");
                 Content.css("position", "relative");
                 toggled = false;
