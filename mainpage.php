@@ -22,15 +22,21 @@ if(!isset($_SESSION['username'])) {
     <link rel="icon" href="images/mwicon.png">
     <script>
     $( document ).ready(function() {
+        $("#allchat").click(function(){
+            $.post( "chat.php",  { data: "0" }  );
+            $("#header-bar").text("All Chat");
+        });
         $("#mattweston").click(function(){
             $.post( "chat.php",  { data: "1" }  );
-            $("#header-bar").text("Hello world");
+            $("#header-bar").text("Matt Weston");
         });
         $("#quincarter").click(function(){
-            $.post( "chat.php",  { data: "2" }  );
+            $.post( "chat.php",  { data: "2" }  );\
+            $("#header-bar").text("Quin Carter");
         });
         $("#loganmccourry").click(function(){
             $.post( "chat.php",  { data: "3" }  );
+            $("#header-bar").text("Loganb McCourry");
         });
     });
 </script>
