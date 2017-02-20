@@ -86,6 +86,7 @@ if(!isset($_SESSION['username'])) {
     </div>
     <div class="row">
         <div class="col-md-12" id="chat-box">
+            <?php echo $_SESSION['chat_id']; ?>
             Hello There <br>
             Hello There <br>
             Hello There <br>
