@@ -80,17 +80,7 @@ if(!isset($_SESSION['username'])) {
 <div class="container" id="main">
     <div class="row">
         <div class="col-md-12" id="header-bar">
-            <?php
-            if ($SESSION[chat_id] == 0) {
-                echo "All Chat"
-            } elseif ($SESSION[chat_id] == 1) {
-                echo "Matt Weston"
-            } elseif ($SESSION[chat_id] == 2) {
-                echo "Quin Carter"
-            } elseif ($SESSION[chat_id] == 3) {
-                echo "Logan McCourry"
-            }
-            ?>
+            All Chat
         </div>
     </div>
     <div class="row">
