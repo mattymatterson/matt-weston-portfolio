@@ -36,7 +36,7 @@ if(!isset($_SESSION['username'])) {
         });
         $("#loganmccourry").click(function(){
             $.post( "chat.php",  { data: "3" }  );
-            $("#header-bar").text("Loganb McCourry");
+            $("#header-bar").text("Logan McCourry");
         });
     });
 </script>
