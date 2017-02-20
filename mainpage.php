@@ -162,15 +162,16 @@ if(!isset($_SESSION['username'])) {
     </div>
 </div>
     <script>
-        
-        $("#quincarter").click(function(){
-            <?php $_SESSION[chat_id] = 2; ?>
-        });
-        $("#loganmccourry").click(function(){
-            <?php $_SESSION[chat_id] = 3; ?>
-        });
-        $("#mattweston").click(function(){
-            <?php $_SESSION[chat_id] = 1; ?>
+        $( document ).ready(function() {
+            $("#quincarter").click(function(){
+                <?php $_SESSION[chat_id] = 2; ?>
+            });
+            $("#loganmccourry").click(function(){
+                <?php $_SESSION[chat_id] = 3; ?>
+            });
+            $("#mattweston").click(function(){
+                <?php $_SESSION[chat_id] = 1; ?>
+            });
         });
     </script>
 </body>
