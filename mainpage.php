@@ -20,6 +20,19 @@ if(!isset($_SESSION['username'])) {
     <link rel="stylesheet" href="styles\main.css">
     <script src="/js/main.js"></script>
     <link rel="icon" href="images/mwicon.png">
+    <script>
+    $( document ).ready(function() {
+        $("#quincarter").click(function(){
+            <?php $_SESSION[chat_id] = 2; ?>
+        });
+        $("#loganmccourry").click(function(){
+            <?php $_SESSION[chat_id] = 3; ?>
+        });
+        $("#mattweston").click(function(){
+            <?php $_SESSION[chat_id] = 1; ?>
+        });
+    });
+</script>
 </head>
 <body>
 <div class="nav-side-menu" id="left-nav">
@@ -161,19 +174,6 @@ if(!isset($_SESSION['username'])) {
         </div>
     </div>
 </div>
-    <script>
-        $( document ).ready(function() {
-            $("#quincarter").click(function(){
-                <?php $_SESSION[chat_id] = 2; ?>
-            });
-            $("#loganmccourry").click(function(){
-                <?php $_SESSION[chat_id] = 3; ?>
-            });
-            $("#mattweston").click(function(){
-                <?php $_SESSION[chat_id] = 1; ?>
-            });
-        });
-    </script>
 </body>
 </html>
 <?php
