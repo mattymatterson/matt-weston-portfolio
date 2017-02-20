@@ -85,87 +85,8 @@ if(!isset($_SESSION['username'])) {
     </div>
     <div class="row">
         <div class="col-md-12" id="chat-box">
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-             Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-             Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
-            Hello There <br>
+            test1<br>
+            test2<br>
         </div>
     </div>
     <div class="row">
