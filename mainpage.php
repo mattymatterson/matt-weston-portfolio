@@ -24,7 +24,7 @@ if(!isset($_SESSION['username'])) {
     $( document ).ready(function() {
         $("#mattweston").click(function(){
             $.post( "chat.php",  { data: "1" }  );
-            $("#header-bar").val("Hello world");
+            $("#header-bar").text("Hello world");
         });
         $("#quincarter").click(function(){
             $.post( "chat.php",  { data: "2" }  );
