@@ -22,14 +22,15 @@ if(!isset($_SESSION['username'])) {
     <link rel="icon" href="images/mwicon.png">
     <script>
     $( document ).ready(function() {
-        $("#loganmccourry").click(function(){
-            <?php $_SESSION['chat_id'] = 3; ?>
-        });
         $("#mattweston").click(function(){
-            <?php $_SESSION['chat_id'] = 1; ?>
+            $.post( "chat.php",  { data: "1" }  );
         });
         $("#quincarter").click(function(){
-            <?php $_SESSION['chat_id'] = 2; ?>
+            $.post( "chat.php",  { data: "2" }  );
+        });
+        $("#loganmccourry").click(function(){
+            $.post( "chat.php",  { data: "3" }  );
+            <?php $_SESSION['chat_id'] = 3; ?>
         });
     });
 </script>
