@@ -22,7 +22,7 @@ if (isset($username)) {
             $_SESSION['firstname'] = htmlspecialchars($row["firstname"]);
             $_SESSION['lastname'] = htmlspecialchars($row["lastname"]);
             $_SESSION['email'] = htmlspecialchars($row["email"]);
-            $_SESSION['chat_id'] = 0;
+            $_SESSION['chat_id'] = "0";
             echo count($row);
         }
         if ($_SESSION['username'] == $username) {
