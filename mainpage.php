@@ -22,14 +22,14 @@ if(!isset($_SESSION['username'])) {
     <link rel="icon" href="images/mwicon.png">
     <script>
     $( document ).ready(function() {
-        $("#quincarter").click(function(){
-            <?php $_SESSION[chat_id] = 2; ?>
-        });
         $("#loganmccourry").click(function(){
             <?php $_SESSION[chat_id] = 3; ?>
         });
         $("#mattweston").click(function(){
             <?php $_SESSION[chat_id] = 1; ?>
+        });
+        $("#quincarter").click(function(){
+            <?php $_SESSION[chat_id] = 2; ?>
         });
     });
 </script>
