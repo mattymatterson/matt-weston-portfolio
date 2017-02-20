@@ -30,7 +30,6 @@ if(!isset($_SESSION['username'])) {
         });
         $("#loganmccourry").click(function(){
             $.post( "chat.php",  { data: "3" }  );
-            <?php $_SESSION['chat_id'] = 3; ?>
         });
     });
 </script>
