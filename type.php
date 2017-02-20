@@ -10,7 +10,7 @@ $dsn = "pgsql:"
     . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
 $db = new PDO($dsn);
 
-$message = $_POST['data'];
+//$message = $_POST['data'];
 //$time = "The time is now";
 $query = "insert into chat(chat_id,message, chat_from, chat_to, time) values ( nextval('chat_id_seq'), 'Hello world', 1 , '0', 2:30);";
 $result = $db->query($query);
