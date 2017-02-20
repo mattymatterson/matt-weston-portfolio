@@ -31,7 +31,7 @@ if(!isset($_SESSION['username'])) {
             $("#header-bar").text("Matt Weston");
         });
         $("#quincarter").click(function(){
-            $.post( "chat.php",  { data: "2" }  );\
+            $.post( "chat.php",  { data: "2" }  );
             $("#header-bar").text("Quin Carter");
         });
         $("#loganmccourry").click(function(){
