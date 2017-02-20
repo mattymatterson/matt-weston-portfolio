@@ -23,13 +23,13 @@ if(!isset($_SESSION['username'])) {
     <script>
     $( document ).ready(function() {
         $("#loganmccourry").click(function(){
-            <?php $_SESSION[chat_id] = 3; ?>
+            <?php $_SESSION['chat_id'] = 3; ?>
         });
         $("#mattweston").click(function(){
-            <?php $_SESSION[chat_id] = 1; ?>
+            <?php $_SESSION['chat_id'] = 1; ?>
         });
         $("#quincarter").click(function(){
-            <?php $_SESSION[chat_id] = 2; ?>
+            <?php $_SESSION['chat_id'] = 2; ?>
         });
     });
 </script>
