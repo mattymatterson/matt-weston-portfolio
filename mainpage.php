@@ -47,7 +47,7 @@ if(!isset($_SESSION['username'])) {
                 <a href="#"><i class="fa fa-gift fa-lg"></i> Powershell <span class="glyphicon glyphicon-menu-down"></span></a>
             </li>
             <ul class="sub-menu collapse" id="products">
-                <li class="active"><a href="/test.php">Student Schedule Lookup</a></li>
+                <li class="active"><a href="/studentScheduleLookup.php">Student Schedule Lookup</a></li>
                 <li><a href="#">Option 2</a></li>
                 <li><a href="#">Option 3</a></li>
                 <li><a href="#">Option 4</a></li>
