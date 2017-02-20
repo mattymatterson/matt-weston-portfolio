@@ -1,4 +1,4 @@
 <?php
 session_start();
-$_SESSION[user_id] = $_POST['data'];
+$_SESSION[chat_id] = $_POST['data'];
 ?>
