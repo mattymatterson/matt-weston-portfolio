@@ -106,7 +106,7 @@ if(!isset($_SESSION['username'])) {
                 $result = $db->query($query);
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 
-                    echo "<td>" . htmlspecialchars($row["time"]) . "</td>";
+                    echo "<td>" . htmlspecialchars($row["time"] . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
                 }
