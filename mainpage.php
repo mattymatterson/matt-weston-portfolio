@@ -94,6 +94,9 @@ if(!isset($_SESSION['username'])) {
     </div>
     <div class="row">
         <div class="col-md-12" id="chat-box">
+            <script>
+                setInterval(function(){ console.log("Hello world"; }, 1000);
+            </script>
                 <?php
                 $dsn = "pgsql:"
                     . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
