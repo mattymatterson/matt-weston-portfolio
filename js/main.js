@@ -7,8 +7,10 @@ $( document ).ready(function() {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
                 var chatArea = $("#chat-box");
+                var header = $("#header-bar");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "-270px");
+                header.css("left","0px");
                 chatArea.css("left","40px");
                 chatBox.css("left","40px");
                 Content.css("left", "-270px");
@@ -18,8 +20,10 @@ $( document ).ready(function() {
                 var leftNav = $("#left-nav");
                 var Content = $(".container");
                 var chatArea = $("#chat-box");
+                var header = $("#header-bar");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "0px");
+                header.css("left","0px");
                 chatArea.css("left","270px");
                 chatBox.css("left","320px");
                 Content.css("position", "relative");
