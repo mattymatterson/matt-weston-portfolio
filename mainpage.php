@@ -102,7 +102,7 @@ if(!isset($_SESSION['username'])) {
                     . "sslmode=require;"
                     . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
                 $db = new PDO($dsn);
-                $query = "select * from chat";
+                $query = "select * from chat order by chat_id desc;";
                 $result = $db->query($query);
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 
