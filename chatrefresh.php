@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_GET["chat_id"]
 
 $response = "time name":"message";
 
