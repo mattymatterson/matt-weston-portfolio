@@ -100,7 +100,7 @@ if(!isset($_SESSION['username'])) {
                     $message = "Hello World";//jQuery.parseJSON("results.json");
                     $.getJSON("results.json", function(result){
                         $.each(result, function(i, field){
-                            $("#chat-box").text(field + "<br>");
+                            $("#chat-box").append(field + "<br>");
                         });
                     });
                     //$("#chat-box").text($message);
