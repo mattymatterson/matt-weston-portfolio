@@ -97,7 +97,7 @@ if(!isset($_SESSION['username'])) {
             <script>
                 setInterval(function(){ $messages = (
                     $.get( "chatrefresh.php" )); 
-                    $message = $.jsonParse("results.json");
+                    $message = jQuery.parseJSON("results.json");
                     $("#chat-box").text($message);
                                       }, 1000);
             </script>
