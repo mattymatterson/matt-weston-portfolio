@@ -107,8 +107,13 @@ if(!isset($_SESSION['username'])) {
                 $query = "select * from chat order by chat_id;";
                 $result = $db->query($query);
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                    $newtime = explode(" ",$row["time"]);
-                    $newtime = substr($newtime[1], 0, -2);
+                    $newtime = explode(" ",$row["time"]); //removing the date
+                    $newtime = substr($newtime[1], 0, -2); //removing AM/PM
+                    $hours = substr($newtime, 0, 6); //changing from GMT to CST
+                    $hours = $hours - 6;
+                    if ($hours > 24) { $hours = $hours - 24; }
+                    if ($hours < 0) { $hours = 24 - $hours; }
+                    $newtime = $hours + substr($newtime, 2,0);
                     echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
