@@ -110,11 +110,21 @@ if(!isset($_SESSION['username'])) {
                     $newtime = explode(" ",$row["time"]); //removing the date
                     $newtime = substr($newtime[1], 0, -2); //removing AM/PM
                     $hours = substr($newtime, 0, 2); //changing from GMT to CST
-                    $hours = $hours - 6;
-                    if ($hours > 24) { $hours = $hours - 24; }
-                    if ($hours < 0) { $hours = 24 + $hours; }
-                    $newtime = $hours . substr($newtime, 2,6);
+                    $hours = $hours - 6; //changing from GMT to CST
+                    if ($hours > 24) { $hours = $hours - 24; } //checking to make sure it doesnt have a weird number
+                    if ($hours < 0) { $hours = 24 + $hours; } //checking to make sure it doesnt have a weird number
+                    $newtime = $hours . substr($newtime, 2,6); //adding hours to the rest of the string
                     echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
+                    if ($row["user_id"] == "1") {
+                        $name = "Matt Weston"
+                    }
+                    if ($row["user_id"] == "2") {
+                        $name = "Quin Carter"
+                    }
+                    if ($row["user_id"] == "3") {
+                        $name = "Logan McCourry"
+                    }
+                    echo "<td>" . htmlspecialchars($name) . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
                 }
