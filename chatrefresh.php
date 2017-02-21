@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+$_SESSION[chat_id];
 $result = array("time", "name", "message");
 //$response = "time name","message";
 
