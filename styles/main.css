@@ -317,14 +317,14 @@ body {
     height: 60px;
 }
 #chatType {
-    position: fixed;
-    left: 320px;
-    width: 70%;
+    position: relative;
+    /* left: 320px; */
+    width: 100%;
     border-radius: 10px;
     border: 5px solid #4f5b69;
     height: 3em;
     text-indent: 10px;
-    float:left;
+    float: left;
 }
 .glyphicon-menu-left {
     float:right;
