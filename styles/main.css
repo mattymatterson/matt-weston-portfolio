@@ -310,6 +310,7 @@ body {
     height: 68vh;
     overflow-y: scroll;
     padding: 30px;
+    padding-top: 50px;
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
