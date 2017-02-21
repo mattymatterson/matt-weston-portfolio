@@ -115,13 +115,13 @@ if(!isset($_SESSION['username'])) {
                     if ($hours < 0) { $hours = 24 + $hours; } //checking to make sure it doesnt have a weird number
                     $newtime = $hours . substr($newtime, 2,6); //adding hours to the rest of the string
                     echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
-                    if ($row["user_id"] == "1") {
+                    if ($row["chat_from"] == "1") {
                         $name = "Matt Weston";
                     }
-                    if ($row["user_id"] == "2") {
+                    if ($row["chat_from"] == "2") {
                         $name = "Quin Carter";
                     }
-                    if ($row["user_id"] == "3") {
+                    if ($row["chat_from"] == "3") {
                         $name = "Logan McCourry";
                     }
                     echo "<td>" . htmlspecialchars($name) . "</td>";
