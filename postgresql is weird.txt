@@ -40,7 +40,21 @@ values (
 	'Carter',
 	'Quin.Carter@gmail.com'
 );
-
+insert into users(
+	user_id,
+	username,
+	password,
+	firstname,
+	lastname,
+	email)
+values (
+	nextval('user_id_seq'),
+	'logan',
+	'logan',
+	'Logan',
+	'McCourry',
+	'Logan.da.boss@gmail.com'
+);
 
 
 
