@@ -114,7 +114,7 @@ if(!isset($_SESSION['username'])) {
                     if ($hours > 24) { $hours = $hours - 24; } //checking to make sure it doesnt have a weird number
                     if ($hours < 0) { $hours = 24 + $hours; } //checking to make sure it doesnt have a weird number
                     $newtime = $hours . substr($newtime, 2,6); //adding hours to the rest of the string
-                    echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
+                    echo "<td>" . htmlspecialchars($newtime . " ") . "</td>";
                     if ($row["chat_from"] == "1") {
                         $name = "Matt Weston";
                     }
@@ -124,7 +124,7 @@ if(!isset($_SESSION['username'])) {
                     if ($row["chat_from"] == "3") {
                         $name = "Logan McCourry";
                     }
-                    echo "<td>" . htmlspecialchars($name) . "</td>";
+                    echo "<td>" . htmlspecialchars($name . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
                 }
