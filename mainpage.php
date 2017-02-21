@@ -105,7 +105,8 @@ if(!isset($_SESSION['username'])) {
                 $query = "select * from chat order by chat_id desc;";
                 $result = $db->query($query);
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                    echo "<td>" . htmlspecialchars($row["time"] . ": ") . "</td>";
+                    $newtime = $row["time"];
+                    echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
                 }
