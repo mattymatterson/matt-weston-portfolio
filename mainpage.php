@@ -106,7 +106,8 @@ if(!isset($_SESSION['username'])) {
                 $result = $db->query($query);
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                     $newtime = explode(" ",$row["time"]);
-                    echo "<td>" . htmlspecialchars($newtime[1] . ": ") . "</td>";
+                    $newtime = substr($newtime[1], 0, -2);
+                    echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
                 }
