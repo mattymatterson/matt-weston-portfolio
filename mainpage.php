@@ -112,7 +112,7 @@ if(!isset($_SESSION['username'])) {
                     $hours = substr($newtime, 0, 2); //changing from GMT to CST
                     $hours = $hours - 6;
                     if ($hours > 24) { $hours = $hours - 24; }
-                    if ($hours < 0) { $hours = 24 - $hours; }
+                    if ($hours < 0) { $hours = 24 + $hours; }
                     $newtime = $hours . substr($newtime, 2,6);
                     echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
