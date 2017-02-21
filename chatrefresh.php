@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $dsn = "pgsql:"
     . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
     . "dbname=dc2ibd1t6ecgng;"
@@ -28,7 +27,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     if ($row["chat_from"] == "3") {
         $name = "Logan McCourry";
     }
-  $json += array($newtime, $name, $row["message"]);
+  $json += array($newtime . $name . $row["message"]);
 }
 
 $fp = fopen('results.json', 'w');
