@@ -92,8 +92,23 @@ if(!isset($_SESSION['username'])) {
     </div>
     <div class="row">
         <div class="col-md-12" id="chat-box">
-            test1<br>
-            test2<br>
+            <?php
+                $dsn = "pgsql:"
+                    . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
+                    . "dbname=dc2ibd1t6ecgng;"
+                    . "user=kjuxctiwjuizkv;"
+                    . "port=5432;"
+                    . "sslmode=require;"
+                    . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
+                $db = new PDO($dsn);
+                $query = "select * from chat where chat_to=";
+                $result = $db->query($query);
+                while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                    $message json_encode("$row["time"],$row["message"]");
+                    echo $message
+                }
+                ?>
+
         </div>
     </div>
     <div class="row">
