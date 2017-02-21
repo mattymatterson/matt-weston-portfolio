@@ -95,7 +95,7 @@ if(!isset($_SESSION['username'])) {
     <div class="row">
         <div class="col-md-12" id="chat-box">
             <script>
-                setInterval(function(){ $.get{}; }, 1000);
+                setInterval(function(){ $messages = ($.get( "chatrefresh.php" );); }, 1000);
             </script>
                 <?php
                 $dsn = "pgsql:"
