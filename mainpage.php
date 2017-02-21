@@ -109,11 +109,11 @@ if(!isset($_SESSION['username'])) {
                 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
                     $newtime = explode(" ",$row["time"]); //removing the date
                     $newtime = substr($newtime[1], 0, -2); //removing AM/PM
-                    $hours = substr($newtime, 0, 6); //changing from GMT to CST
+                    $hours = substr($newtime, 0, 2); //changing from GMT to CST
                     $hours = $hours - 6;
                     if ($hours > 24) { $hours = $hours - 24; }
                     if ($hours < 0) { $hours = 24 - $hours; }
-                    $newtime = $hours + substr($newtime, 2,0);
+                    $newtime = $hours + substr($newtime, 2,6);
                     echo "<td>" . htmlspecialchars($newtime . ": ") . "</td>";
                     echo "<td>" . htmlspecialchars($row["message"]) . "</td><br>";
                     
