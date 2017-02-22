@@ -2,6 +2,8 @@ $( document ).ready(function() {
     var toggled = false;
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     $( "#collapse-left-navbar" ).click(function() {
+        ( "#collapse-left-navbar" ).toggle();
+        /*
         if (w >= 766) { // if viewport is larger than 766
             if (toggled == false) {
                 var leftNav = $("#left-nav");
@@ -53,6 +55,7 @@ $( document ).ready(function() {
                 }
             }
         }
+        */
     }); //end nav collapse
     $("#Profile").click(function(){
         $("#profileMenu").toggle();
