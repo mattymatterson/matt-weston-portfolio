@@ -23,7 +23,7 @@ $( document ).ready(function() {
                 var header = $("#header-bar");
                 var chatBox = $("#chatType");
                 leftNav.css("left", "0px");
-                header.css("left","0px");
+                header.css("left","30px");
                 chatArea.css("left","270px");
                 chatBox.css("left","320px");
                 Content.css("position", "relative");
