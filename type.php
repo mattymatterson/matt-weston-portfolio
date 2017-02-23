@@ -22,7 +22,7 @@ $DateTime = $date . " " . $time;
 $db = pg_connect("host=ec2-107-20-191-76.compute-1.amazonaws.com port=5432 dbname=dc2ibd1t6ecgng user=kjuxctiwjuizkv password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582");
 //$query = "INSERT INTO chat VALUES ('nextval('chat_id_seq')','$_POST[data]','$_SESSION['user_id'], '0', '2:30');";
 $message = filter_var($_POST[data], FILTER_SANITIZE_SPECIAL_CHARS);
-$query = pg_escape_string("INSERT INTO chat VALUES (nextval('chat_id_seq'),'$message','$_SESSION[user_id]', '$_SESSION[chat_id]', '$DateTime');");
+$query = "INSERT INTO chat VALUES (nextval('chat_id_seq'),'$message','$_SESSION[user_id]', '$_SESSION[chat_id]', '$DateTime');";
 $result = pg_query($query); 
 
 /*
