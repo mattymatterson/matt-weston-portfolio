@@ -31,8 +31,8 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     }
     $json[] = $newtime . " " . $name. ": " . $row["message"];
 }
- 
+
 $fp = fopen('results.json', 'w');
-fwrite($fp, json_encode($json[]);
+fwrite($fp, json_encode($json);
 fclose($fp);
 ?>
