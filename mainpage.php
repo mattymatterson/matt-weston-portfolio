@@ -96,7 +96,7 @@ if(!isset($_SESSION['username'])) {
         <div class="col-md-12" id="chat-box">
             <script>
                 setInterval(function(){
-                    var messages;
+                    var messages = "";
                     $.get( "chatrefresh.php" );
                     $.getJSON("results.json", function(result){
                         $.each(result, function(i, field){
