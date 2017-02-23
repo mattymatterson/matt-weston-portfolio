@@ -99,9 +99,7 @@ if(!isset($_SESSION['username'])) {
                     $.get( "chatrefresh.php" )); 
                     $message = "Hello World";//jQuery.parseJSON("results.json");
                     $.getJSON("results.json", function(result){
-                        $.each(result, function(i, field){
-                            $("#chat-box").text(field + "<br>");
-                        });
+                            $("#chat-box").text(result + "<br>");
                     });
                     //$("#chat-box").text($message);
                                       }, 1000);
