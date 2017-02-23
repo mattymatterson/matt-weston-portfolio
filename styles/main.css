@@ -306,26 +306,29 @@ body {
     z-index: 1000;
 }
 #chat-box {
-    position: relative;
-    height: 68vh;
-    overflow-y: scroll;
-    padding: 30px;
-    padding-top: 50px;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    position: fixed;
+    top: 109px;
+    height: 77%;
+    border: solid grey thin;
+    background: whitesmoke;
+    width: 68%;
+    overflow-y: auto;
+    padding-top: 5px;
+    padding-right: 30px;
+    margin-left: 18px;
 }
 #type-bar {
     height: 60px;
 }
 #chatType {
-    position: relative;
-    /* left: 320px; */
-    width: 100%;
     border-radius: 10px;
     border: 5px solid #4f5b69;
     height: 3em;
     text-indent: 10px;
     float: left;
+    position: fixed;
+    bottom: 7px;
+    width: 68%;
 }
 .glyphicon-menu-left {
     float:right;
