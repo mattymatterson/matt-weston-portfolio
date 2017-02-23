@@ -5,5 +5,5 @@ $json[] = "World";
 
 $json[] = "Stuff";
 
-echo $json;
+json_encode($json[]);
 ?>
