@@ -100,13 +100,13 @@ if(!isset($_SESSION['username'])) {
                     $.get( "chatrefresh.php" ); 
                     $.getJSON("results.json", function(result){
                         $.each(result, function(i, field){
-                            messages += field + "<br> "
+                            messages += field + "\n"
                             $.fn.multiline = function(text){
                                 this.text(text);
                                 this.html(this.html().replace(/\n/g,'<br/>'));
                                 return this;
                             }
-                            $("#chat-box").multiline("Dear <br/> Diary <br/> :D");
+                            $("#chat-box").multiline(messages);
                             // Now you can do this:
                             //$("#chat-box").multiline('this\n has\n newlines');
                         });
