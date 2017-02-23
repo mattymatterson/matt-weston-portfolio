@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if(!isset($_SESSION['user_id'])) {
+    header("Location: login.html");
+} else {
 $dsn = "pgsql:"
     . "host=ec2-107-20-191-76.compute-1.amazonaws.com;"
     . "dbname=dc2ibd1t6ecgng;"
@@ -45,4 +47,5 @@ values (
 	$timeDate
 );"
 */
+}
 ?>
