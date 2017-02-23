@@ -101,7 +101,7 @@ if(!isset($_SESSION['username'])) {
                     $.getJSON("results.json", function(result){
                         $.each(result, function(i, field){
                             messages += field + "<br> "
-                            $("#chat-box").text(messages");
+                            $("#chat-box").text(messages);
                         });
                     });
                     //$("#chat-box").text($message);
