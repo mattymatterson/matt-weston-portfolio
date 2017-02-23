@@ -12,7 +12,7 @@ $db = new PDO($dsn);
 
 //$message = $_POST['data'];
 //$time = "The time is now";
-$query = "insert into chat(chat_id,message, chat_from, chat_to, time) values ( nextval('chat_id_seq'), 'Hello world', 1 , '0', 2:30);";
+//$query = "insert into chat(chat_id,message, chat_from, chat_to, time) values ( nextval('chat_id_seq'), 'Hello world', 1 , '0', 2:30);";
 $result = $db->query($query);
 
 $time = date("h:i:sa");
@@ -23,7 +23,7 @@ $db = pg_connect("host=ec2-107-20-191-76.compute-1.amazonaws.com port=5432 dbnam
 //$query = "INSERT INTO chat VALUES ('nextval('chat_id_seq')','$_POST[data]','$_SESSION['user_id'], '0', '2:30');";
 $message = filter_var($_POST[data], FILTER_SANITIZE_SPECIAL_CHARS);
 $query = "INSERT INTO chat VALUES (nextval('chat_id_seq'),'$message','$_SESSION[user_id]', '$_SESSION[chat_id]', '$DateTime');";
-$result = pg_query($query); 
+$result = pg_escape_string($query); 
 
 /*
 $time = date("h:i:sa");
