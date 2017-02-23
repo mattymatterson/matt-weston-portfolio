@@ -5,5 +5,7 @@ $json[] = "World";
 
 $json[] = "Stuff";
 
-json_encode($json[]);
+$fp = fopen('testing.json', 'w');
+fwrite($fp, json_encode($json);
+fclose($fp);
 ?>
