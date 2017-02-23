@@ -38,7 +38,6 @@ if(!isset($_SESSION['username'])) {
             $.post( "chat.php",  { data: "3" }  );
             $("#header-bar").text("Logan McCourry");
         });
-        $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
 
     });
 </script>
@@ -107,6 +106,7 @@ if(!isset($_SESSION['username'])) {
                                 return this;
                             }
                             $("#chat-box").multiline(messages);
+                            $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
                             // Now you can do this:
                             //$("#chat-box").multiline('this\n has\n newlines');
                         });
