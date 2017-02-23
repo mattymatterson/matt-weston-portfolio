@@ -97,7 +97,7 @@ if(!isset($_SESSION['username'])) {
             <script>
                 setInterval(function(){
                     var messages;
-                    $.get( "chatrefresh.php" ); 
+                    $.get( "chatrefresh.php" );
                     $.getJSON("results.json", function(result){
                         $.each(result, function(i, field){
                             messages += field + "\n"
