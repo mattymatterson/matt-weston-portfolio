@@ -106,7 +106,7 @@ if(!isset($_SESSION['username'])) {
                                 return this;
                             }
                             $("#chat-box").multiline(messages);
-                            $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
+                            //$("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
                             // Now you can do this:
                             //$("#chat-box").multiline('this\n has\n newlines');
                         });
