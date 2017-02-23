@@ -28,7 +28,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     if ($row["chat_from"] == "3") {
         $name = "Logan McCourry";
     }
-    $json[] = $newtime . " " . $name. ": " . $row["message"] . <br>;
+    $json[] = $newtime . " " . $name. ": " . $row["message"] . "<br>";
 }
 
 $fp = fopen('results.json', 'w');
