@@ -101,7 +101,7 @@ if(!isset($_SESSION['username'])) {
                     $.getJSON("results.json", function(result){
                         $.each(result, function(i, field){
                             messages += field + "<br> "
-                            //$("#chat-box").text("Dear <br> Diary <br> :D");
+                            $("#chat-box").text("Dear <br/> Diary <br/> :D");
                             $.fn.multiline = function(text){
                                 this.text(text);
                                 this.html(this.html().replace(/\n/g,'<br/>'));
@@ -109,7 +109,7 @@ if(!isset($_SESSION['username'])) {
                             }
 
                             // Now you can do this:
-                            $("#chat-box").multiline('this\n has\n newlines');
+                            //$("#chat-box").multiline('this\n has\n newlines');
                         });
                     });
                     //$("#chat-box").text($message);
