@@ -32,6 +32,6 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 }
 
 $fp = fopen('results.json', 'w');
-fwrite($fp, json_encode($json[1..2]));
+fwrite($fp, json_encode($json[1,2,5]));
 fclose($fp);
 ?>
