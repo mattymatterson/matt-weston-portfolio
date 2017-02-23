@@ -9,6 +9,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/login.css">
     <link rel="icon" href="/images/mwicon.png">
+    <script>
+        $(function() {
+            $("#RegisterPopup").toggle();
+        });
+    </script>
 </head>
 <body>
 <div class="container">
@@ -22,9 +27,20 @@
                 <br>
                 <input type="submit" id="submit" value="Login">
             </form>
-            <a>New? Register Here! </a>
+            <a id="Register">New? Register Here! </a>
         </div>
     </div>
 </div>
+    <script>
+        $("#Register").click(function(){
+            $("#RegisterPopup").toggle();
+        });
+    </script>
+    <div id="RegisterPopup">
+        <form>
+            <input type="text" name="username">
+            <input type="password" name="password">
+        </form>
+    </div>
 </body>
 </html>
