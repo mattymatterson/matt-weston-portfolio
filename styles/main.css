@@ -5,6 +5,18 @@
 body {
     background-color: #aed9df;
 }
+#chat-box {
+    position: fixed;
+    top: 109px;
+    height: 77%;
+    border: solid grey thin;
+    background: whitesmoke;
+    width: 68%;
+    overflow-y: auto;
+    padding-top: 5px;
+    padding-right: 30px;
+    margin-left: 18px;
+}
 .container {
     width: 100vw;
     height: 100vh;
@@ -316,18 +328,6 @@ body {
     position: fixed;
     top: auto;
     z-index: 1000;
-}
-#chat-box {
-    position: fixed;
-    top: 109px;
-    height: 77%;
-    border: solid grey thin;
-    background: whitesmoke;
-    width: 68%;
-    overflow-y: auto;
-    padding-top: 5px;
-    padding-right: 30px;
-    margin-left: 18px;
 }
 #type-bar {
     height: 60px;
