@@ -9,14 +9,10 @@ if(!isset($_SESSION['username'])) {
 
   // http headers for zip downloads
   
-    header("Cache-Control: public");
-    header("Content-Description: File Transfer");
-    header("Content-Disposition: attachment; filename=$file");
-    header("Content-Type: application/zip");
-    header("Content-Transfer-Encoding: binary");
 
-    // read the file from disk
-    readfile($file);
-  @readfile($filepath.$filename);
+header("Content-disposition: attachment; filename=" . "PowerShellForm.7z");
+header("Content-type: application/pdf");
+readfile($filePath);
+    
 }
 ?>
