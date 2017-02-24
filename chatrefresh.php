@@ -11,11 +11,11 @@ if (isset($_SESSION[chat_id])) {
     $db = new PDO($dsn);
     echo $_SESSION[chat_id] . "<br>";
     echo $_SESSION[user_id];
-    if ($_SESSION[chat_id] == 0) {
+    //if ($_SESSION[chat_id] == 0) {
         $query = "select * from chat where chat_to = '$_SESSION[chat_id]' order by chat_id;";
-    } else {
-        $query = "select * from chat where (chat_to = '$_SESSION[user_id]' and chat_from = '$_SESSION[chat_id]') or (chat_from = '$_SESSION[user_id]' and chat_to='$_SESSION[chat_id]') order by chat_id;";
-    }
+    //} else {
+        //$query = "select * from chat where (chat_to = '$_SESSION[user_id]' and chat_from = '$_SESSION[chat_id]') or (chat_from = '$_SESSION[user_id]' and chat_to='$_SESSION[chat_id]') order by chat_id;";
+    //}
     $result = $db->query($query);
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
         $newtime = explode(" ",$row["time"]); //removing the date
