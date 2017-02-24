@@ -24,8 +24,8 @@ $( document ).ready(function() {
                 var chatBox = $("#chatType");
                 leftNav.css("left", "0px");
                 header.css("left","300px");
-                chatArea.css("left","270px");
-                chatBox.css("left","320px");
+                chatArea.css("left","300px");
+                chatBox.css("left","310px");
                 Content.css("position", "relative");
                 toggled = false;
             }
