@@ -293,7 +293,7 @@ body {
     #chat-box {
     position: fixed;
     top: 109px;
-    height: 60%;
+    height: 20%;
     border: solid grey thin;
     background: whitesmoke;
     width: 68%;
