@@ -1,0 +1,17 @@
+echo off
+SET @name=%computername%
+::echo %@name%
+::SET @name=010-2120-123456
+echo %@name%
+for /F "tokens=1,2,3 delims=- " %%a in ("%@name%") do (
+   SET @room=%%b
+)
+echo %@room%
+
+::installer
+::msiexec.exe /i e:\!student.msi /q /passive ADVANCED_OPTIONS=1 CHANNEL=%@room% ENABLECHANNELSELECT=1
+::msiexec.exe /i "\\123-501-A0062\a\!student.msi" /q /passive ADVANCED_OPTIONS=1 CHANNEL=%@room% ENABLECHANNELSELECT=1
+msiexec.exe /i "\\053-lib-62576\a\LanSchool 8.01\ls80015ecopy_eng\Windows\student.msi" /q /passive ADVANCED_OPTIONS=1 CHANNEL=%@room% ENABLECHANNELSELECT=1
+::uninstaller
+::msiexec.exe /x "e:\!student.msi" /q /passive
+::msiexec.exe /x "\\123-501-A0062\a\!student.msi" /q /passive
