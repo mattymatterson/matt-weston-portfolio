@@ -56,7 +56,7 @@ if(!isset($_SESSION['username'])) {
             </li>
             <ul class="sub-menu collapse" id="products">
                 <li class="active"><a href="/studentScheduleLookup.php">Student Schedule Lookup</a></li>
-                <li><a href="#">Option 2</a></li>
+                <li><a href="/PSdotNnet Interaction.txt">.Net Interaction</a></li>
                 <li><a href="#">Option 3</a></li>
                 <li><a href="#">Option 4</a></li>
                 <li><a href="#">Option 5</a></li>
