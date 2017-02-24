@@ -96,7 +96,6 @@ if(!isset($_SESSION['username'])) {
                             $.fn.multiline = function(text){
                                 this.text(text);
                                 this.html(this.html().replace(/\n/g,'<br/>'));
-                                this.html(this.html().replace(''',"&#39;"));
                                 return this;
                             }
                             $("#chat-box").multiline(messages);
