@@ -55,12 +55,13 @@ if(!isset($_SESSION['username'])) {
     <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
             <li data-toggle="collapse" data-target="#products" class="collapsed active">
-                <a href="#"><i class="fa fa-gift fa-lg"></i> Powershell <span class="glyphicon glyphicon-menu-down"></span></a>
+                <a href="#"><i class="fa fa-gift fa-lg"></i> Coding <span class="glyphicon glyphicon-menu-down"></span></a>
             </li>
             <ul class="sub-menu collapse" id="products">
-                <li class="active"><a href="/studentScheduleLookup.php">Student Schedule Lookup</a></li>
-                <li><a href="/PSdotNnet Interaction.txt">.Net Interaction</a></li>
+                <li class="active"><a href="/studentScheduleLookup.php">PS Student Schedule Lookup</a></li>
+                <li><a href="/PSdotNnet Interaction.txt">PS .Net Interaction</a></li>
                 <li><a href="/rsBot.php">Java Bot</a></li>
+                <li><a href="/lanschool.txt">Batch Lanschool Install</a></li>
             </ul>
             <li data-toggle="collapse" data-target="#service" class="collapsed" id="Chats">
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Chats <span class="glyphicon glyphicon-menu-down"></span></a>
