@@ -2,6 +2,7 @@
 session_start();
 
 $_SESSION['username'] = null;
+$_SESSION['chat_id'] = null;
 $_SESSION['active'] = null;
 $_SESSION['start'] = null;
 $_SESSION['expire'] = null;
