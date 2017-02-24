@@ -42,6 +42,6 @@ if (isset($_SESSION[chat_id])) {
     fclose($fp);
 }
 else {
-    echo "Refresh your page.";
+    header("Location: /login.html");
 }
 ?>
