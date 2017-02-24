@@ -35,4 +35,7 @@ if (isset($_SESSION[chat_id])) {
     fwrite($fp, json_encode($json,JSON_PRETTY_PRINT));
     fclose($fp);
 }
+else {
+    echo "Refresh your page.";
+}
 ?>
