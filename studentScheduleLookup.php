@@ -8,11 +8,9 @@ if(!isset($_SESSION['username'])) {
   $filepath = "/";
 
   // http headers for zip downloads
-  
-
-header("Content-disposition: attachment; filename=" . "PowerShellForm.7z");
-header("Content-type: application/pdf");
-readfile($filePath);
     
+    header('Content-disposition: attachment; filename=' . $filename);
+    header('Content-type: application/zip');
+    readfile($filename);
 }
 ?>
