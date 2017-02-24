@@ -11,8 +11,6 @@ if (isset($_SESSION[chat_id])) {
     $db = new PDO($dsn);
     if ($_SESSION[chat_id] = 0) {
         $query = "select * from chat where chat_to = '$_SESSION[chat_id]' order by chat_id;";
-    } else {
-        $query = "select * from chat where chat_from = '$_SESSION[user_id] and chat_to = '$_SESSION[chat_id]' order by chat_id;";
     }
     $result = $db->query($query);
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
