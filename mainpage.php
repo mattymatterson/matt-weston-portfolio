@@ -67,7 +67,7 @@ if(!isset($_SESSION['username'])) {
             </li>
             <ul class="sub-menu collapse" id="service">
                 <li><span id="allchat">All Chat</span></li>
-                <li><span id="StopRefresh">All Chat</span></li>
+                <li><span id="StopRefresh">Stop Chat Refresh</span></li>
             </ul>
 
 
