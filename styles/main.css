@@ -127,7 +127,7 @@ body {
     #chat-box {
     position: fixed;
     top: 109px;
-    height: 20%;
+    height: 20px;
     border: solid grey thin;
     background: whitesmoke;
     width: 68%;
