@@ -9,6 +9,9 @@ if (isset($_SESSION[chat_id])) {
         . "sslmode=require;"
         . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
     $db = new PDO($dsn);
+    echo $_SESSION[chat_id] . "<br>";
+    echo $_SESSION[user_id];
+    
     $query = "select * from chat where chat_to = '$_SESSION[chat_id]' order by chat_id;";
     $result = $db->query($query);
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
