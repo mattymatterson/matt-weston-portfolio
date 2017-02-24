@@ -58,13 +58,6 @@ if(!isset($_SESSION['username'])) {
                 <li class="active"><a href="/studentScheduleLookup.php">Student Schedule Lookup</a></li>
                 <li><a href="/PSdotNnet Interaction.txt">.Net Interaction</a></li>
                 <li><a href="/rsBot.php">Java Bot</a></li>
-                <li><a href="#">Option 4</a></li>
-                <li><a href="#">Option 5</a></li>
-                <li><a href="#">Option 6</a></li>
-                <li><a href="#">Option 7</a></li>
-                <li><a href="#">Option 8</a></li>
-                <li><a href="#">Option 9</a></li>
-                <li><a href="#">Option 10</a></li>
             </ul>
             <li data-toggle="collapse" data-target="#service" class="collapsed" id="Chats">
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Chats <span class="glyphicon glyphicon-menu-down"></span></a>
