@@ -38,6 +38,9 @@ if(!isset($_SESSION['username'])) {
             $.post( "chat.php",  { data: "3" }  );
             $("#header-bar").text("Logan McCourry");
         });
+        $("#stopRefresh").click(function(){
+            clearInterval(refresh);
+        });
         $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
     });
 </script>
@@ -58,6 +61,7 @@ if(!isset($_SESSION['username'])) {
                 <li class="active"><a href="/studentScheduleLookup.php">Student Schedule Lookup</a></li>
                 <li><a href="/PSdotNnet Interaction.txt">.Net Interaction</a></li>
                 <li><a href="/rsBot.php">Java Bot</a></li>
+                <li><a href="#" id="StopRefresh">Stop Refresh Chat</a></li>
             </ul>
             <li data-toggle="collapse" data-target="#service" class="collapsed" id="Chats">
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Chats <span class="glyphicon glyphicon-menu-down"></span></a>
@@ -87,7 +91,7 @@ if(!isset($_SESSION['username'])) {
     <div class="row">
         <div class="col-md-12" id="chat-box">
             <script>
-                setInterval(function(){
+                var refresh = setInterval(function(){
                     var messages = "";
                     $.get( "chatrefresh.php" );
                     $.getJSON("results.json", function(result){
