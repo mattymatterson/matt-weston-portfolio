@@ -14,7 +14,7 @@ if (isset($username)) {
             . "password=f0e911e4e4cf90720283e28d02c0f26080d675133f65969fa30abad47e18f582";
 
         $db = new PDO($dsn);
-        $query = "select * from users where (username='$username' OR email = '$username') and password='$password';";
+        $query = "select * from users where (email='$username' OR username = '$username') and password='$password';";
         $result = $db->query($query);
         while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
             $_SESSION['user_id'] = htmlspecialchars($row["user_id"]);
