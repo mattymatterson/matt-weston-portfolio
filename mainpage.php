@@ -61,7 +61,7 @@ if(!isset($_SESSION['username'])) {
                 <li class="active"><a href="/studentScheduleLookup.php">Student Schedule Lookup</a></li>
                 <li><a href="/PSdotNnet Interaction.txt">.Net Interaction</a></li>
                 <li><a href="/rsBot.php">Java Bot</a></li>
-                <li><a href="#" id="StopRefresh">Stop Refresh Chat</a></li>
+                <li id="StopRefresh"><a href="#">Stop Refresh Chat</a></li>
             </ul>
             <li data-toggle="collapse" data-target="#service" class="collapsed" id="Chats">
                 <a href="#"><i class="fa fa-globe fa-lg"></i> Chats <span class="glyphicon glyphicon-menu-down"></span></a>
