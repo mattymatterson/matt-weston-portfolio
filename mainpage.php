@@ -39,7 +39,8 @@ if(!isset($_SESSION['username'])) {
             $("#header-bar").text("Logan McCourry");
         });
         $("#stopRefresh").click(function(){
-            clearInterval(refresh);
+            alert("Hello world");
+            //clearInterval(refresh);
         });
         $("#chat-box").scrollTop($("#chat-box")[0].scrollHeight);
     });
